@@ -90,6 +90,8 @@ print("Maximum value:", maximum_value)
 print("Minimum value:", minimum_value)
 
 
+
+
 Exercise 7: Arithmetic Operations
 # Simple calculator program
 
