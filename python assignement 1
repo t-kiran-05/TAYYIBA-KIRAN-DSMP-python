@@ -1,12 +1,13 @@
+
 Exercise 1: Comments
 # This program prints my name.(single line comment)
 print("tayyiba kiran")  
 
-#the progeam prints, whatever is written in it
+#the program prints, whatever is written in it
 #by the "print" statement, we can print a line or word, writen in quotes
 
 
-Exercise 2: Error Identification
+Exercise 2: Identifying Errors
 #Below is a piece of code with some intentional errors. Identify and correct the errors. Explain the type of error for each correction made.
 #print("Welcome to Python!"
 #result = 10 / 0               
