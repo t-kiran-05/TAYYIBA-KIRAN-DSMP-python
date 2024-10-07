@@ -1,0 +1,123 @@
+Exercise 1: Comments
+# This program prints my name.(single line comment)
+print("tayyiba kiran")  
+
+#the progeam prints, whatever is written in it
+#by the "print" statement, we can print a line or word, writen in quotes
+
+
+Exercise 2: Error Identification
+#Below is a piece of code with some intentional errors. Identify and correct the errors. Explain the type of error for each correction made.
+#print("Welcome to Python!"
+#result = 10 / 0               
+#my_list = [1, 2, 3
+#print(my_list[3])
+
+# Corrected code with explanations:
+
+#1.print("Welcome to Python!"
+# SyntaxError: Missing closing parenthesis
+print("Welcome to Python!")  # Added closing parenthesis
+
+#result = 10 / 0   
+# ZeroDivisionError: Division by zero is not allowed
+# result = 10 / 0
+result = 10 / 2  # Changed to divide by 2 instead of 0 to avoid the error
+
+#my_list = [1, 2, 3
+# SyntaxError: Missing closing square bracket for the list
+my_list = [1, 2, 3]  # Added closing square bracket
+
+#print(my_list[3])
+# IndexError: List index out of range
+# print(my_list[3])
+print(my_list[2])  # Changed index to 2 to access the last element in the list
+
+
+Exercise 3: Variable Assignment
+# Assigning variables
+name = "tayyiba kiran"
+age = 2;p0  
+height = 5  
+is_student = True 
+
+# Printing each variable with an appropriate message
+print("Name:", name)
+print("Age:", age)
+print("Height:", height)
+print("Student status:", is_student)
+
+Exercise 4: Descriptive Variable Names
+# Using descriptive variable names
+length = 5
+width = 10
+area = length * width
+print("Area:", area)
+
+Exercise 5: Numeric Types and Operations
+# Adding two integers
+result_add = 7 + 3
+print("Addition result:", result_add)
+
+# Subtracting a float from an integer
+result_subtract = 10 - 4.5
+print("Subtraction result:", result_subtract)
+
+# Multiplying a float by a complex number
+result_multiply = 3.5 * (2 + 3j)
+print("Multiplication result:", result_multiply)
+
+# Dividing an integer by zero (will produce an error)
+try:
+    result_divide = 10 / 0
+except ZeroDivisionError as e:
+    print("Division error:", e)
+
+
+#Exercise 6: Built-in Functions
+# Taking a list of numbers as input from the user
+user_input = input("Enter a list of numbers: ")
+numbers = [float(num) for num in user_input.split(",")]
+
+# Using abs(), max(), and min() functions
+absolute_values = [abs(num) for num in numbers]
+maximum_value = max(numbers)
+minimum_value = min(numbers)
+
+# Printing the results
+print("Absolute values:", absolute_values)
+print("Maximum value:", maximum_value)
+print("Minimum value:", minimum_value)
+
+
+Exercise 7: Arithmetic Operations
+# Simple calculator program
+
+# Prompting the user to enter two numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+# Asking the user to select an operation
+print("Select an operation: + for addition, - for subtraction, * for multiplication, / for division")
+operation = input("Enter the operation: ")
+
+# Performing the selected operation and printing the result
+if operation == "+":
+    result = num1 + num2
+    print("Result:", result)
+elif operation == "-":
+    result = num1 - num2
+    print("Result:", result)
+elif operation == "*":
+    result = num1 * num2
+    print("Result:", result)
+elif operation == "/":
+    if num2 != 0:
+        result = num1 / num2
+        print("Result:", result)
+    else:
+        print("Error: Division by zero is not allowed.")
+else:
+    print("Invalid operation selected.")
+
+
